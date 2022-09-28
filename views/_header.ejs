@@ -1,0 +1,45 @@
+<header>
+    <div id="nav-bar">
+
+        <div id="header">
+
+            <a href="/">
+                <div id="logo-img">
+                     <img src="../image/logo.png">
+                 </div>
+            </a>
+
+                 <h2>
+                     <a href="/">Codeial</a>
+                 </h2>
+
+        </div>
+        <div class="sign">
+              <% if(locals.user) {%>
+            <div id="profile-image">
+                <img src="<%= user.avatar%>" alt="<%= user.name%>" width="100">
+            </div>
+        <div>
+
+            <a href="/users/profile">
+                <%= user.name %>
+            </a>
+        </div>
+        <div id="sign">
+            <a href="/users/sign-out">Sign Out</a>
+        </div>
+        <%}else{%>
+
+           <div>
+                <a href="/users/sign-in">Sign In</a>
+            </div>
+             <div>
+                <a href="/users/sign-up">Sign Up</a>
+            <div>
+                <%}%>
+        </div>
+    </div>
+
+
+
+  </header>

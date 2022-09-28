@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6%;
+  background-color: darkgray; }
+  .footer #links li {
+    list-style: none; }
+    .footer #links li a {
+      color: black; }

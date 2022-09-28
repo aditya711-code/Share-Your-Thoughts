@@ -1,4 +1,62 @@
-body{
-    margin:0;
-    text-align:center;
-}
+body {
+  margin: 0; }
+  body #layout-main {
+    height: 100%; }
+  body a {
+    text-decoration: none; }
+  body li {
+    list-style: none; }
+
+/***POST&***/
+#feed-posts {
+  border: 2px solid black;
+  border-top: 0px; }
+  #feed-posts h4 {
+    text-align: center;
+    font-family: "Archivo Black";
+    font-size: 25px; }
+
+#new-post-form {
+  text-align: center; }
+
+#post-list-container {
+  margin-bottom: 10px; }
+  #post-list-container li {
+    font-family: 'Alike';
+    font-size: 22px; }
+    #post-list-container li small {
+      font-size: 12px;
+      font-weight: 1000; }
+
+/****Log IN***/
+#sign-in-page {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0 0;
+  position: relative; }
+  #sign-in-page hr {
+    background: #FDCF08;
+    width: 60%;
+    transition: width  2s ease-in-out; }
+  #sign-in-page .avatar-image {
+    width: 35%;
+    height: 25%;
+    margin: 0px auto; }
+    #sign-in-page .avatar-image img {
+      width: 50%;
+      height: 50%; }
+  #sign-in-page #details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative; }
+    #sign-in-page #details #email-div {
+      padding: 20px 0px; }
+  #sign-in-page input[type="submit"] {
+    margin-top: 5px; }
+  #sign-in-page p i {
+    color: orange; }
+
+#sign-in-page:hover hr {
+  width: 35%; }

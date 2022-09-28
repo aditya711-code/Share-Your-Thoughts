@@ -1,1 +1,30 @@
-<h1>Sign In/Codedial</h1>
+<div id="sign-in-page">
+
+
+    <h1>Sign In</h1>
+    <hr>
+    <form action="/users/create-session" method="POST">
+        <div class="avatar-image">
+            <img src="/image/user-avatar.jpg" alt="Avatar-Image">
+        </div>
+        <div id="details">
+            <div id="email-div">
+               <i class="fas fa-user"></i>
+                <input type="email" name="email" placeholder="Username" required>
+            </div>
+            <div id="password-div">
+                 <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+        </div>
+        <input type="submit" value="Sign In">
+    </form>
+
+    <p>
+
+        <a href="/users/auth/google">
+             <i class="fab fa-google-plus" id="social-login"></i>
+        </a>
+
+    </p>
+</div>
